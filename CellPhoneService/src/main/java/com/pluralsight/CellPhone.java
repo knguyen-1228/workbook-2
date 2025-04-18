@@ -8,6 +8,7 @@ public class CellPhone {
     private String carrier;
     private String phoneNum;
     private String owner;
+    private String dial;
 
     //is the constructor
     //decided the values for the prop
@@ -17,7 +18,14 @@ public class CellPhone {
         this.carrier = "";
         this.phoneNum = "";
         this.owner = "";
+        this.dial = "";
     }
+    //method shows how you make a phone call another phone
+    public void dialPhone(String phoneNumber){
+        System.out.println(this.getOwner() + "'s phone is calling " + phoneNumber);
+
+    }
+
     //getter and setter (line 22 - 60)
     public int getSerialNum() {
         return serialNum;
@@ -57,5 +65,13 @@ public class CellPhone {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public String getDial() {
+        return dial;
+    }
+
+    public void setDial(String dial) {
+        this.dial = dial;
     }
 }
