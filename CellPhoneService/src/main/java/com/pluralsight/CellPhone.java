@@ -20,6 +20,17 @@ public class CellPhone {
         this.owner = "";
         this.dial = "";
     }
+
+    public CellPhone(int sN, String model, String carrier, String phoneNum, String owner, String dial){
+        this.serialNum = sN;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNum = phoneNum;
+        this.owner = owner;
+        this.dial = dial;
+    }
+
+
     //method shows how you make a phone call another phone
     public void dialPhone(String phoneNumber){
         System.out.println(this.getOwner() + "'s phone is calling " + phoneNumber);

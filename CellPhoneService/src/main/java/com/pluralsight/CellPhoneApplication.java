@@ -64,6 +64,15 @@ public class CellPhoneApplication {
        //having phone 1 call my phone
        System.out.println("\n");
        phone1.dialPhone(myPhone.getPhoneNum());
+       System.out.println("\n");
+
+       CellPhone phone2 = new CellPhone(123,"iphone","att","1231231234","kevin","7897897890");
+
+       display(phone2);
+
+       System.out.println("\n");
+       myPhone.dialPhone((phone2.getPhoneNum()));
+       System.out.println("\n");
 
 
 
